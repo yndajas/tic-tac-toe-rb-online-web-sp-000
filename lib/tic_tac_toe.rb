@@ -47,16 +47,7 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.select{|index|index=="X"||index=="O"}.length
-  
-  
-  turn = 0
-  board.each do |index|
-    if index == "X" || index == "O"
-      turn += 1
-    end
-  end
-  turn
+  board.select{|index|index=="X"||index=="O"}.length # plus one?
 end
 
 def current_player(board)
