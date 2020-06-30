@@ -47,7 +47,7 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.select{|index|index=="X"||index=="O"}.length # plus one?
+  board.select{|index|index=="X"||index=="O"}.length
 end
 
 def current_player(board)
