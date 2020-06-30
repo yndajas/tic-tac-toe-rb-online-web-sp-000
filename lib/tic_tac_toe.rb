@@ -89,7 +89,9 @@ def play(board)
   if won?(board)
     puts "Congratulations #{winner(board)}, you win!"
   else
-    puts "It's a tie team!"
+    puts "It's a tie!"
+  end
+end
 
 #def play(board)
 #  turn = 0
