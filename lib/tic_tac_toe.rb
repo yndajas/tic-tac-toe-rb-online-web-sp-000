@@ -82,6 +82,15 @@ def winner(board)
   end
 end
 
+def play(board)
+  until over?(board)
+    turn(board)
+  end
+  if won?(board)
+    puts "Congratulations #{winner(board)}, you win!"
+  else
+    puts "It's a tie team!"
+
 #def play(board)
 #  turn = 0
 #  until turn > 8
