@@ -41,6 +41,7 @@ def turn(board)
     move(board, index)
     display_board(board)
   else
+    puts "Input invalid"
     turn(board)
   end
 end
