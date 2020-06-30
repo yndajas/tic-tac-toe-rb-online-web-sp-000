@@ -47,7 +47,7 @@ def turn(board)
 end
 
 def turn_count(board)
-  board.select {|index|
+  board.select{|index|index=="X"||index=="O"}.length
   
   
   turn = 0
